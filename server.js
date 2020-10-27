@@ -1,3 +1,4 @@
+// bring in http for creating the server
 const http = require('http');
 
 //bring in axios to make fetch calls to the ipwhois api
@@ -20,6 +21,7 @@ const logger = createLogger({
     ),
     transports: [new transports.File({ filename: 'error.log', level: 'error' }),]
 })
+
 //create a node server
 const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'application/json' });
