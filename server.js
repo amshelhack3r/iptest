@@ -15,7 +15,7 @@ const { combine, timestamp, label, prettyPrint } = format;
 
 const logger = createLogger({
     format: combine(
-        label({ label: 'IP TEST LOGGER LOGGER' }),
+        label({ label: 'IP TEST ERROR LOGGER' }),
         timestamp(),
         prettyPrint()
     ),
@@ -37,6 +37,7 @@ const server = http.createServer((req, res) => {
         })
         .catch(err => {
             logger.error(err)
+            res.write(err)
             res.end()
         })
 
