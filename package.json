@@ -1,0 +1,25 @@
+{
+  "name": "iptest",
+  "version": "1.0.0",
+  "description": "test ipaddress",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amshelhack3r/iptest.git"
+  },
+  "author": "amshel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amshelhack3r/iptest/issues"
+  },
+  "homepage": "https://github.com/amshelhack3r/iptest#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "ipware": "^2.0.0",
+    "winston": "^3.3.3"
+  }
+}
